@@ -1,0 +1,155 @@
+:root {
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: var(--white);
+}
+header {
+    width: 100vw;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo a img{
+    margin-right: 5px;
+
+}
+
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--gray);
+}
+button {
+    color: var(--gray);
+    border: none;
+    background-color: var(--white);
+    padding: 9px 16px;
+}
+.container .nav-menu .menu .menu-item {
+    display: inline-block;
+}
+.sub-menu {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px gray;
+
+}
+.container .nav-menu .menu .menu-item {
+    margin: 7px;
+    font-size: 13px;
+}
+.container .nav-menu .menu .menu-item:hover {
+   text-decoration: underline;
+   transition: all 0.3s ease;
+}
+.menu .sub-menu img {
+    margin-right: 10px;
+}
+.menu .menu-item .sub-menu {
+    position: absolute;
+    display: grid;
+    top: 100%;
+    border-top: 2px solid gray;
+    transform: translateY(-30px);
+    text-align: left;
+    visibility: hidden;
+}
+.menu .menu-item .sub-menu.active{
+    visibility: visible;
+}
+
+.menu .menu-item .sub-menu.open{
+    visibility: visible;
+}
+button:nth-last-child(1){
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin: 0 43px;
+}
+.container .nav-menu .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 9px 50px;
+}
+
+.menu img {
+    margin-left: 6px;
+}
+.container .logo ul li,button{
+    cursor: pointer;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 70px 30px;
+}
+.content-left {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+
+}
+.content-right img{
+    max-width: 100%;
+    height: auto;
+}
+.content-left h1 {
+    font-size: 4rem;
+    margin: 100px 15px 0 0;
+}
+.content-left p {
+    font-size: 1rem;
+    color: var(--gray);
+    width: 70%;
+    font-weight: 100;
+    line-height: 1.4;
+}
+.learn-btn {
+    display: flex;
+    margin: 30px 0;
+}
+.partner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.partner img {
+    width: 51%;
+   
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

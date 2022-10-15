@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+<link rel="stylesheet" href="./CSS/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <div class="logo">
+      <a href="#">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
+    
+        <div class="nav-menu">
+          <ul class="menu">
+            <Li class="menu-item" id="menubtn" data-nav-toggle-btn><a href="#">Features</a>
+              <img src="./images/icon-arrow-down.svg" alt="arrow">
+              <ul class="sub-menu" id="customSelect" data-header>
+                <li class="menu-item"><img src="./images/icon-todo.svg" alt="">ToDo List</li>
+                <li class="menu-item"><img src="./images/icon-calendar.svg" alt="">Calendar</li>
+                <li class="menu-item"><img src="./images/icon-reminders.svg" alt="">Reminders</li>
+                <li class="menu-item"><img src="./images/icon-planning.svg" alt="">Planning</li>
+              </ul>
+            </Li>  
+            <Li class="menu-item" id="companybtn" data-company-btn>Company<img src="./images/icon-arrow-down.svg" alt="arrow">
+              <ul class="sub-menu"  id="companySelect" data-menu>
+                <li class="menu-item">History</li>
+                <li class="menu-item">Our Team</li>
+                <li class="menu-item">Blog</li>
+              </ul>
+            </Li>
+            <Li class="menu-item">Careers</Li>
+            <Li class="menu-item">About</Li>
+          </ul>
+      </div>
+    </div>
+      <div class="login">
+          <button>Login</button>
+          <button>Register</button>
+      </div>
+  </nav>
+</header>
+  <main>
+    <div class="content-left">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+        <button class="learn-btn">
+          Learn more
+        </button>
+      </p>
+      
+      <div class="partner">
+        <img src="./images/client-databiz.svg" alt="client-databiz">
+        <img src="./images/client-audiophile.svg" alt="client-audiophile">
+        <img src="./images/client-meet.svg" alt="client-meet">
+        <img src="./images/client-maker.svg" alt="client-maker">
+      </div>
+    </div>
+    <div class="content-right">
+      <img src="./images/image-hero-desktop.png" alt="">
+      <img src="./images/image-hero-mobile.png" alt="" style="display: none ;">
+    </div>
+  </main>
+
+
+  
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./JS/script.js"></script>
+</body>
+</html>
