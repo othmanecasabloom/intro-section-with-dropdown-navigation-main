@@ -141,6 +141,10 @@ main {
     display: flex;
     margin: 30px 0;
 }
+.learn-btn:hover {
+    color: var(--black);
+    font-weight: bold;
+}
 .partner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
